@@ -1,0 +1,19 @@
+:host {
+  header {
+    position: absolute;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 10px;
+      line-height: 15px;
+      background-color: transparent;
+      position: fixed;
+      background-color: #444444a8;
+      border-radius: 20px;
+      span {
+        cursor: pointer;
+      }
+    }
+  }
+}

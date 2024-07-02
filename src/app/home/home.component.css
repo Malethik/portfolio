@@ -1,0 +1,17 @@
+:host {
+  section {
+    padding-top: 25px;
+    .profilepic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    }
+    div {
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
