@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-profile',
   standalone: true,
   imports: [],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.css',
 })
-export class HomeComponent {
+export class ProfileComponent {
   currentYear = new Date().getFullYear();
 }

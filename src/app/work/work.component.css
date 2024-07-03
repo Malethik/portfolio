@@ -1,0 +1,24 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+button {
+  margin: 5px;
+  border-radius: 25px;
+}
+.curriculum {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.framework {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 1rem;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
 import { WorkComponent } from './work/work.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContacsComponent } from './contacs/contacs.component';
@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
   standalone: true,
   imports: [
     HeaderComponent,
-    HomeComponent,
+    ProfileComponent,
     WorkComponent,
     ProjectsComponent,
     ContacsComponent,
