@@ -1,0 +1,8 @@
+:host {
+  a {
+    color: #000;
+    text-decoration: none;
+    border: #000 solid 1px;
+    padding: 4px;
+  }
+}

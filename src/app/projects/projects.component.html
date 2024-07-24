@@ -1,17 +1,12 @@
 <section id="section4">
-  <div>
-    <h2>MOTOMARKET</h2>
-    <div class="motomarket">
-      <img
-        src="../../assets/motomarket.webp"
-        alt="project1.name"
-        height="100"
-        width="180"
-      />
-      <p>motomarket description</p>
-      <a href="https://motomarketes.netlify.app/home" target="_blank"
-        >View Project</a
-      >
+  <h2>Projects</h2>
+  <div *ngFor="let project of projects">
+    <h3>{{ project.name }}</h3>
+    <div *ngFor="let tech of project.technologies">
+      <img [src]="icons[tech]" [alt]="tech" width="32" height="32" />
+      <!-- <span>{{ tech }}</span> -->
     </div>
+    <p>{{ project.description }}</p>
+    <a [href]="project.path" target="_blank">View Project</a>
   </div>
 </section>
