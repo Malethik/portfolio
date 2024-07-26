@@ -1,0 +1,57 @@
+:host {
+  a {
+    color: #000;
+    text-decoration: none;
+    border: #08ee00 solid 1px;
+    padding: 4px;
+    color: #08ee00;
+  }
+  .projectBody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  @media (width > 450px) {
+    a {
+      margin-left: auto;
+    }
+    .projectBody {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    .tech {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+}

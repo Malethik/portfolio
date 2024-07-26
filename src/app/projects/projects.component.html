@@ -1,17 +1,23 @@
 <section id="section4">
-  <div>
-    <h2>MOTOMARKET</h2>
-    <div class="motomarket">
-      <img
-        src="../../assets/motomarket.webp"
-        alt="project1.name"
-        height="100"
-        width="180"
-      />
-      <p>motomarket description</p>
-      <a href="https://motomarketes.netlify.app/home" target="_blank"
-        >View Project</a
-      >
+  <h2>Projects</h2>
+  <div class="projects" *ngFor="let project of projects">
+    <h3>{{ project.name }}</h3>
+    <div class="projectBody">
+      <img [src]="project.image" [alt]="project.name" height="100" />
+      <p>{{ project.description }}</p>
+    </div>
+    <div class="tech">
+      <div *ngFor="let tech of project.technologies">
+        <img [src]="icons[tech]" [alt]="tech" width="32" height="32" />
+      </div>
+      <a [href]="project.front" target="_blank">GitHub Front</a>
+      @if (project.back?.length! < 3) {
+      <span></span>
+      }@else{
+      <a [href]="project.back" target="_blank">GitHub Back</a>
+      }
+
+      <a [href]="project.path" target="_blank">View Project</a>
     </div>
   </div>
 </section>
