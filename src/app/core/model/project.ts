@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
     description:
       'Using the PokeAPI, I created a Pokedex where users can search for their favorite Pokemon. The project was developed using Angular.',
     image: '../../../assets/pokedex.webp',
-    path: 'https://sbirulino.netlify.app',
+    path: 'https://pokedex17.netlify.app/home',
     front: 'https://github.com/Malethik/Pokemon-Angular-17',
   },
 ];
