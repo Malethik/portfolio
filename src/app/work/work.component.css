@@ -18,7 +18,7 @@ button {
   border-radius: 25px;
   padding: 1rem;
 }
-.work {
+.card {
   display: flex;
   flex-direction: column;
   gap: 1rem;
