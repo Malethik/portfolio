@@ -18,6 +18,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 25px;
   padding: 1rem;
+  background-color: #727272;
 }
 .card {
   display: flex;
