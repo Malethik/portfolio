@@ -1,7 +1,14 @@
 <section id="section5">
-  <p>
-    contacs works!contacs works!contacs works!contacs works!contacs
-    works!contacs works!contacs works!contacs works!contacs works!contacs
-    works!contacs works!contacs works!contacs works!
-  </p>
+  <form (ngSubmit)="sendEmail()">
+    <label for="from">From:</label>
+    <input id="from" [(ngModel)]="from" name="from" required />
+
+    <label for="subject">Subject:</label>
+    <input id="subject" [(ngModel)]="subject" name="subject" required />
+
+    <label for="text">Message:</label>
+    <textarea id="text" [(ngModel)]="text" name="text" required></textarea>
+
+    <button type="submit">Send Email</button>
+  </form>
 </section>
