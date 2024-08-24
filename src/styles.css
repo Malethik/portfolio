@@ -7,9 +7,8 @@ html {
   background-color: #444444;
   color: rgb(8, 238, 0);
   font-family: "PressStart2P-Regular", sans-serif;
-  padding-bottom: 150px;
+  padding-bottom: 15px;
   @media (width > 450px) {
-    padding-bottom: 0px;
   }
 }
 .framework {
