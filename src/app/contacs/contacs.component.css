@@ -10,6 +10,14 @@
   #text {
     height: 100px;
   }
+
+  .invalid {
+    color: red;
+    font-size: 8px;
+  }
+  label {
+    margin-top: 8px;
+  }
 }
 .modal {
   display: none;
