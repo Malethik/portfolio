@@ -11,3 +11,47 @@
     height: 100px;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+}
+.modal.show {
+  display: flex;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #727272;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+.modal-overlay {
+  display: none;
+}
+.modal-overlay.show {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Ombreggiatura semitrasparente che copre l'intero schermo */
+}

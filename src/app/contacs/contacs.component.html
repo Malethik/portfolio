@@ -1,5 +1,5 @@
 <section id="section5">
-  <form  class="form" (ngSubmit)="sendEmail()">
+  <form class="form" (ngSubmit)="sendEmail()">
     <label for="from">From:</label>
     <input id="from" [(ngModel)]="from" name="from" required />
 
@@ -11,4 +11,12 @@
 
     <button type="submit">Send Email</button>
   </form>
+  <div class="modal-overlay" [ngClass]="{ show: showModal }"></div>
+  <div class="modal" [ngClass]="{ show: showModal }">
+    <div class="modal-content">
+      <span>Email send success</span>
+      <span>Thanks for contact me! I will reply soon!</span>
+      <button (click)="closeModal()">Close</button>
+    </div>
+  </div>
 </section>
