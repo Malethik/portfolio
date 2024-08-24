@@ -1,7 +1,22 @@
 <section id="section5">
-  <form class="form" (ngSubmit)="sendEmail()">
+  <form class="form" (ngSubmit)="sendEmail()" #form="ngForm">
     <label for="from">From:</label>
-    <input id="from" [(ngModel)]="from" name="from" required />
+    <input
+      id="from"
+      type="email"
+      [(ngModel)]="from"
+      name="from"
+      required
+      email
+      #fromInput="ngModel"
+    />
+    <div
+      class="invalid"
+      *ngIf="fromInput.invalid && (fromInput.dirty || fromInput.touched)"
+    >
+      <div *ngIf="fromInput.errors?.['required']">Email is required.</div>
+      <div *ngIf="fromInput.errors?.['email']">Invalid email format.</div>
+    </div>
 
     <label for="subject">Subject:</label>
     <input id="subject" [(ngModel)]="subject" name="subject" required />
@@ -9,7 +24,7 @@
     <label for="text">Message:</label>
     <textarea id="text" [(ngModel)]="text" name="text" required></textarea>
 
-    <button type="submit">Send Email</button>
+    <button type="submit" [disabled]="!form.valid">Send Email</button>
   </form>
   <div class="modal-overlay" [ngClass]="{ show: showModal }"></div>
   <div class="modal" [ngClass]="{ show: showModal }">

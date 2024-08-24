@@ -26,7 +26,10 @@ export class ContacsComponent {
       .subscribe({
         next: (response) => (
           (this.showModal = true),
-          console.log('Email inviata con successo', response)
+          console.log('Email inviata con successo', response),
+          (this.from = ''),
+          (this.subject = ''),
+          (this.text = '')
         ),
         error: (error) =>
           console.error("Errore durante l'invio dell'email", error),
