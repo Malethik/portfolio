@@ -1,26 +1,25 @@
-import { ViewportScroller } from '@angular/common';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CommonModule, ViewportScroller } from '@angular/common';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ClickOutsideDirective } from '../core/directive/click-out-side.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ClickOutsideDirective],
+  imports: [ClickOutsideDirective, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   @Input() init: boolean | undefined;
   @Output() opened = new EventEmitter();
+
   active = false;
 
   constructor(private viewportScroller: ViewportScroller) {}
 
-  ngOnInit() {
-    this.active = this.init || false;
-  }
   scrollTo(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
+    this.closeMenu();
   }
 
   onBurgerClicked() {
@@ -35,10 +34,13 @@ export class HeaderComponent implements OnInit {
   }
   private toggleMenuVisibility() {
     const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
     if (this.active) {
       menu?.classList.add('visible');
+      overlay?.classList.add('visible');
     } else {
       menu?.classList.remove('visible');
+      overlay?.classList.remove('visible');
     }
   }
 }

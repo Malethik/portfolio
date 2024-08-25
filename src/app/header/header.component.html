@@ -1,4 +1,5 @@
 <header>
+  <div class="overlay" [class.active]="active"></div>
   <nav>
     <!-- MOBILE MENU -->
     <div class="container navbar" appClickOutside (clickOutside)="closeMenu()">
@@ -23,9 +24,9 @@
     </div>
     <!-- DESKTOP MENU -->
     <div class="desktop-menu">
-      <span (click)="scrollTo('section1')">ABOUT ME</span>
-      <span (click)="scrollTo('section3')">WORK EXPERIENCE</span>
-      <span (click)="scrollTo('section4')">MY PROJECTS</span>
+      <span (click)="scrollTo('section1')">ABOUTME</span>
+      <span (click)="scrollTo('section3')">WORK</span>
+      <span (click)="scrollTo('section4')">PROJECTS</span>
       <span (click)="scrollTo('section5')">CONTACTS</span>
     </div>
   </nav>
