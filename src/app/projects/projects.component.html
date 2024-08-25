@@ -1,23 +1,28 @@
 <section id="section4">
-  <h2>Projects</h2>
+  <h2>{{ "projects.sectionTitle" | translate }}</h2>
   <div class="projects" *ngFor="let project of projects">
-    <h3>{{ project.name }}</h3>
+    <h3>{{ "projects." + project.name + ".name" | translate }}</h3>
     <div class="projectBody">
       <img [src]="project.image" [alt]="project.name" height="100" />
-      <p>{{ project.description }}</p>
+      <p>{{ "projects." + project.name + ".description" | translate }}</p>
     </div>
     <div class="tech">
       <div *ngFor="let tech of project.technologies">
         <img [src]="icons[tech]" [alt]="tech" width="32" height="32" />
       </div>
-      <a [href]="project.front" target="_blank">GitHub Front</a>
-      @if (project.back?.length! < 3) {
-      <span></span>
-      }@else{
-      <a [href]="project.back" target="_blank">GitHub Back</a>
-      }
-
-      <a [href]="project.path" target="_blank">View Project</a>
+      <a [href]="project.front" target="_blank">{{
+        "projects.githubFront" | translate
+      }}</a>
+      <span *ngIf="project.back?.length! < 3"></span>
+      <a
+        *ngIf="project.back?.length! >= 3"
+        [href]="project.back"
+        target="_blank"
+        >{{ "projects.githubBack" | translate }}</a
+      >
+      <a [href]="project.path" target="_blank">{{
+        "projects.viewProject" | translate
+      }}</a>
     </div>
   </div>
 </section>

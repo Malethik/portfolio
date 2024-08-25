@@ -8,6 +8,13 @@ import { WorkComponent } from './work/work.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { StudyComponent } from './study/study.component';
 import { PingService } from './core/service/ping.service';
+import {
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from '@ngx-translate/core';
+import { HttpLoaderFactory } from './translate-loader';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -27,8 +34,12 @@ import { PingService } from './core/service/ping.service';
 export class AppComponent implements OnInit {
   //ping server for wake-up and permit use nodemailer
   private ping = inject(PingService);
+  private translate = inject(TranslateService);
 
   ngOnInit() {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+
     this.ping.getPingServer().subscribe({
       next: (response) => console.log('Server response:', response),
       error: (error) => console.error('Error pinging server:', error),

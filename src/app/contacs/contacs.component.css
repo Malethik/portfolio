@@ -56,10 +56,5 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ); /* Ombreggiatura semitrasparente che copre l'intero schermo */
+  background-color: rgba(0, 0, 0, 0.4);
 }

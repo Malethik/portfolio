@@ -1,0 +1,61 @@
+{
+  "profile": {
+    "title": "DANIELE QUINTILIANI",
+    "greeting": "HELLO! I'm Daniele!",
+    "description1": "I'm {{age}} years old and I'm a Full Stack Developer.",
+    "description2": "I started programming when I was young with my Commodore64! I grew up with a love for computers and video games! But when I had to choose a school, the only option available was Chemistry and Biology.",
+    "description3": "My career path took a different direction, but I always maintained a love for technology. And now that I have the opportunity, I chose to follow my passion."
+  },
+  "qualifications": {
+    "sectionTitle": "QUALIFICATIONS:",
+    "fullstackTitle": "Fullstack Web Developer",
+    "fullstackInstitution": "ISDI CODERS",
+    "fullstackLocationDate": "Madrid - 2024",
+    "fullstackDescription": "During the intensive Fullstack Web Development course at ISDI Coders, I acquired advanced skills in web development, specializing in both front-end and back-end technologies. I worked on real-world projects using modern technology stacks such as HTML, CSS, JavaScript, TypeScript, Angular, Node.js, Express, NestJS, and PostgreSQL. This experience allowed me to develop a practical approach to programming, from user interface design to database management, with a focus on best practices and Agile methodologies. As the final part of the course, I presented a personal project, MotoMarket, which I had already started developing on my own.",
+
+    "chemistryTitle": "FP Quimica y Biologia",
+    "chemistryInstitution": "IPSIA E. CAVAZZA",
+    "chemistryLocationDate": "Pomezia (Italia) - 2006",
+    "chemistryDescription": "I completed the Vocational Training program in Chemistry and Biology at IPSIA E. Cavazza, where I acquired a strong foundation in chemical and biological sciences. During the course, I studied subjects such as organic and inorganic chemistry, microbiology, and laboratory techniques. I developed practical skills through laboratory experiments and research projects, which allowed me to gain a better understanding of the practical applications of science in industrial and environmental contexts."
+  },
+  "certification": {
+    "sectionTitle": "CERTIFICATION:",
+    "javaTitle": "JAVA EE",
+    "javaInstitution": "Core Network sl",
+    "javaLocationDate": "Madrid - 2024",
+    "javaDescription": "I completed an intensive course on Java EE (Enterprise Edition) at Core Network SL in Madrid. During the course, I gained advanced skills in developing enterprise applications using the Java EE framework. I studied and applied technologies such as Servlets, JSP (JavaServer Pages), EJB (Enterprise JavaBeans), and JPA (Java Persistence API), as well as software design and architecture techniques for scalable and maintainable applications. I worked on real-world projects that allowed me to integrate various components and services, enhancing my ability to manage and develop complex software solutions."
+  },
+  "knowledge": {
+    "sectionTitle": "KNOWLEDGE:"
+  },
+  "workExperience": {
+    "sectionTitle": "WORKING EXPERIENCE",
+    "curriculum": "My Curriculum: 💾",
+    "raam": {
+      "company": "RAAM Delivery SL, Madrid",
+      "position": "Administrative",
+      "dates": "2020 - 2023",
+      "description": "Use of computer systems and technologies (Excel, Word). Coordination of work schedules and tasks for a team of 42 people. Preparation of periodic reports on work progress."
+    },
+    "naf": {
+      "company": "NAF SERVIZI SRL, Rome",
+      "position": "IT / Administrative Consultant",
+      "dates": "2012 - 2018",
+      "description": "Responsible for creating functional and intuitive web pages and sites for clients using WordPress. Maintenance and updating of existing web applications to ensure security and performance. Use of computer systems and technologies (Excel, Word). Third-party management services."
+    }
+  },
+  "projects": {
+    "sectionTitle": "Projects",
+    "MotoMarket": {
+      "name": "MotoMarket",
+      "description": "A social selling network for motorcycle enthusiasts. The idea was to have a platform where users can sell and buy motorcycles, parts, and accessories. The project was developed using Angular for the frontend, NodeJS with NestJS for the backend, and PostgreSQL for the database."
+    },
+    "Pokedex": {
+      "name": "Pokedex",
+      "description": "Using the PokeAPI, I created a Pokedex where users can search for their favorite Pokemon. The project was developed using Angular."
+    },
+    "githubFront": "GitHub Front",
+    "githubBack": "GitHub Back",
+    "viewProject": "View Project"
+  }
+}
