@@ -1,8 +1,32 @@
 <header>
   <nav>
-    <span (click)="scrollTo('section1')">ABOUT ME</span>
-    <span (click)="scrollTo('section3')">WORK EXPERIENCE</span>
-    <span (click)="scrollTo('section4')">MY PROJECTS</span>
-    <span (click)="scrollTo('section5')">CONTACTS</span>
+    <!-- MOBILE MENU -->
+    <div class="container navbar" appClickOutside (clickOutside)="closeMenu()">
+      <div
+        class="burger-menu"
+        (click)="onBurgerClicked()"
+        [class.active]="active"
+        role="button"
+        aria-roledescription="navigation menu"
+        tabindex="0"
+      >
+        <div class="burger-container">
+          <div class="burger-inner"></div>
+        </div>
+      </div>
+      <ul class="menu" [class.active]="active">
+        <li><span (click)="scrollTo('section1')">ABOUT ME</span></li>
+        <li><span (click)="scrollTo('section3')">WORK EXPERIENCE</span></li>
+        <li><span (click)="scrollTo('section4')">MY PROJECT</span></li>
+        <li><span (click)="scrollTo('section5')">CONTACTS</span></li>
+      </ul>
+    </div>
+    <!-- DESKTOP MENU -->
+    <div class="desktop-menu">
+      <span (click)="scrollTo('section1')">ABOUT ME</span>
+      <span (click)="scrollTo('section3')">WORK EXPERIENCE</span>
+      <span (click)="scrollTo('section4')">MY PROJECTS</span>
+      <span (click)="scrollTo('section5')">CONTACTS</span>
+    </div>
   </nav>
 </header>

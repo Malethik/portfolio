@@ -1,18 +1,98 @@
 :host {
-  header {
-    position: absolute;
-    nav {
+  nav {
+    .desktop-menu {
+      display: none;
+    }
+    .burger-menu {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .burger-menu .burger-container {
+      position: relative;
+    }
+    .burger-menu .burger-container .burger-inner {
+      position: absolute;
+      z-index: 100;
+      width: 22px;
+      left: 0px;
+      top: 11px;
+      border: 1px solid #ff0000;
+      transition: border-color 0.2s ease-in 0.2s;
+    }
+    .burger-menu .burger-container .burger-inner::before {
+      position: absolute;
+      content: "";
+      top: -6px;
+      left: -1px;
+      width: 22px;
+      border: 1px solid #ff0000;
+      transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+    }
+    .burger-menu .burger-container .burger-inner::after {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: -1px;
+      width: 22px;
+      border: 1px solid #ff0000;
+      transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+    }
+    .burger-menu.active .burger-container .burger-inner {
+      border-color: transparent;
+      transition: border-color ease-in 0.1s;
+    }
+    .burger-menu.active .burger-container .burger-inner::before {
+      top: -1px;
+      transform: rotate(-45deg);
+      transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+    }
+    .burger-menu.active .burger-container .burger-inner::after {
+      top: -1px;
+      transform: rotate(45deg);
+      transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+      z-index: 100;
+    }
+    .menu.visible {
       display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      font-size: 10px;
-      line-height: 15px;
-      background-color: transparent;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      width: 100px;
+      height: 250px;
       position: fixed;
-      background-color: #444444a8;
-      border-radius: 20px;
+      z-index: 100;
+      top: 80px;
+      right: 0;
+      background-color: #3d3d3d3d;
+    }
+  }
+  @media (width > 450px) {
+    header {
+      position: absolute;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        font-size: 10px;
+        line-height: 15px;
+        background-color: transparent;
+        position: fixed;
+        background-color: #444444a8;
+        border-radius: 20px;
+      }
       span {
         cursor: pointer;
+      }
+      .desktop-menu {
+        display: flex;
       }
     }
   }
