@@ -98,6 +98,11 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
   }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
   @media (width > 450px) {
     nav {
@@ -121,5 +126,11 @@
         gap: 80px;
       }
     }
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 }

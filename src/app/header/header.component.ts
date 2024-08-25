@@ -1,6 +1,7 @@
 import { CommonModule, ViewportScroller } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { ClickOutsideDirective } from '../core/directive/click-out-side.directive';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +15,13 @@ export class HeaderComponent {
   @Output() opened = new EventEmitter();
 
   active = false;
+  private viewportScroller = inject(ViewportScroller);
+  constructor(private translate: TranslateService) {}
 
-  constructor(private viewportScroller: ViewportScroller) {}
-
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    this.closeMenu();
+  }
   scrollTo(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
     this.closeMenu();
