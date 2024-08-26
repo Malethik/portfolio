@@ -57,5 +57,23 @@
     "githubFront": "GitHub Front",
     "githubBack": "GitHub Back",
     "viewProject": "Ver Proyecto"
+  },
+  "contact": {
+    "sectionTitle": "Contáctame",
+    "fromLabel": "De:",
+    "fromPlaceholder": "Introduce tu correo electrónico",
+    "fromRequired": "El correo electrónico es obligatorio.",
+    "fromInvalid": "Formato de correo electrónico no válido.",
+    "subjectLabel": "Asunto:",
+    "subjectPlaceholder": "Introduce el asunto",
+    "messageLabel": "Mensaje:",
+    "messagePlaceholder": "Introduce tu mensaje",
+    "sendButton": "Enviar Email",
+    "modalSuccess": "Correo electrónico enviado con éxito",
+    "modalThanks": "¡Gracias por contactarme! ¡Responderé pronto!",
+    "modalClose": "Cerrar"
+  },
+  "footer": {
+    "rightsReserved": "© 2024. Casi todos los derechos reservados."
   }
 }

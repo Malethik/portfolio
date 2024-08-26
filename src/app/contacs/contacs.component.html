@@ -1,11 +1,25 @@
 <section id="section5">
+  <h2>{{ "contact.sectionTitle" | translate }}</h2>
+  <div class="social-icons">
+    <a href="https://github.com/Malethik" target="_blank"
+      ><img src="../../assets/github.svg" alt="GitHub" width="32" height="32"
+    /></a>
+    <a href="https://www.linkedin.com/in/daniele-quintiliani/" target="_blank"
+      ><img
+        src="../../assets/linkedin.svg"
+        alt="LinkedIn"
+        width="32"
+        height="32"
+    /></a>
+  </div>
   <form class="form" (ngSubmit)="sendEmail()" #form="ngForm">
-    <label for="from">From:</label>
+    <label for="from">{{ "contact.fromLabel" | translate }}</label>
     <input
       id="from"
       type="email"
       [(ngModel)]="from"
       name="from"
+      placeholder="{{ 'contact.fromPlaceholder' | translate }}"
       required
       email
       #fromInput="ngModel"
@@ -14,24 +28,44 @@
       class="invalid"
       *ngIf="fromInput.invalid && (fromInput.dirty || fromInput.touched)"
     >
-      <div *ngIf="fromInput.errors?.['required']">Email is required.</div>
-      <div *ngIf="fromInput.errors?.['email']">Invalid email format.</div>
+      <div *ngIf="fromInput.errors?.['required']">
+        {{ "contact.fromRequired" | translate }}
+      </div>
+      <div *ngIf="fromInput.errors?.['email']">
+        {{ "contact.fromInvalid" | translate }}
+      </div>
     </div>
 
-    <label for="subject">Subject:</label>
-    <input id="subject" [(ngModel)]="subject" name="subject" required />
+    <label for="subject">{{ "contact.subjectLabel" | translate }}</label>
+    <input
+      id="subject"
+      [(ngModel)]="subject"
+      name="subject"
+      placeholder="{{ 'contact.subjectPlaceholder' | translate }}"
+      required
+    />
 
-    <label for="text">Message:</label>
-    <textarea id="text" [(ngModel)]="text" name="text" required></textarea>
+    <label for="text">{{ "contact.messageLabel" | translate }}</label>
+    <textarea
+      id="text"
+      [(ngModel)]="text"
+      name="text"
+      placeholder="{{ 'contact.messagePlaceholder' | translate }}"
+      required
+    ></textarea>
 
-    <button type="submit" [disabled]="!form.valid">Send Email</button>
+    <button type="submit" [disabled]="!form.valid">
+      {{ "contact.sendButton" | translate }}
+    </button>
   </form>
   <div class="modal-overlay" [ngClass]="{ show: showModal }"></div>
   <div class="modal" [ngClass]="{ show: showModal }">
     <div class="modal-content">
-      <span>Email send success</span>
-      <span>Thanks for contact me! I will reply soon!</span>
-      <button (click)="closeModal()">Close</button>
+      <span>{{ "contact.modalSuccess" | translate }}</span>
+      <span>{{ "contact.modalThanks" | translate }}</span>
+      <button (click)="closeModal()">
+        {{ "contact.modalClose" | translate }}
+      </button>
     </div>
   </div>
 </section>

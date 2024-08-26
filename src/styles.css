@@ -6,10 +6,15 @@
 html {
   background-color: #444444;
   color: rgb(8, 238, 0);
+  line-height: 1.4;
   font-family: "PressStart2P-Regular", sans-serif;
-  @media (width > 450px) {
-  }
 }
+/* h1,
+h2,
+h3,
+h4 {
+  color: rgb(214, 0, 0);
+} */
 .framework {
   display: flex;
   flex-direction: column;
