@@ -6,4 +6,6 @@ export const ICONS: { [key: string]: string } = {
   JavaScript: '../../../assets/javascript.svg',
   NestJS: '../../../assets/nestjs.svg',
   PostgreSQL: '../../../assets/postgresql.svg',
+  gitHub: '../../../assets/github.svg',
+  linkedin: '../../../assets/linkedin.svg',
 };

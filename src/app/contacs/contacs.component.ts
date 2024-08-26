@@ -2,23 +2,26 @@ import { Component, Inject, inject } from '@angular/core';
 import { EmailService } from '../core/service/email.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ICONS } from '../core/model/icons';
 
 @Component({
   selector: 'app-contacs',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contacs.component.html',
   styleUrl: './contacs.component.css',
 })
 export class ContacsComponent {
   showModal: boolean = false;
-
+  icons = ICONS;
   from: string = '';
   to: string = 'quintiliani.d@gmail.com';
   subject: string = '';
   text: string = '';
 
   emailService = inject(EmailService);
+  private translate = inject(TranslateService);
 
   sendEmail() {
     this.emailService

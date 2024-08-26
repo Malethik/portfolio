@@ -58,3 +58,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
