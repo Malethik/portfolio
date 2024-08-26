@@ -9,12 +9,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { StudyComponent } from './study/study.component';
 import { PingService } from './core/service/ping.service';
 import {
-  TranslateLoader,
-  TranslateModule,
   TranslateService,
 } from '@ngx-translate/core';
-import { HttpLoaderFactory } from './translate-loader';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
