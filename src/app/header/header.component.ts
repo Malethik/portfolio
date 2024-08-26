@@ -2,6 +2,7 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { ClickOutsideDirective } from '../core/directive/click-out-side.directive';
 import { TranslateService } from '@ngx-translate/core';
+import { MusicService } from '../core/service/music.service';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +17,9 @@ export class HeaderComponent {
 
   active = false;
   private viewportScroller = inject(ViewportScroller);
-  constructor(private translate: TranslateService) {}
+  private music = inject(MusicService);
+  private translate = inject(TranslateService);
+  constructor() {}
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
@@ -47,5 +50,18 @@ export class HeaderComponent {
       menu?.classList.remove('visible');
       overlay?.classList.remove('visible');
     }
+  }
+  playMusic() {
+    this.music.play().catch((error) => {
+      console.error('Error attempting to play music:', error);
+    });
+  }
+
+  pauseMusic() {
+    this.music.pause();
+  }
+
+  isMusicPlaying(): boolean {
+    return this.music.isPlaying();
   }
 }

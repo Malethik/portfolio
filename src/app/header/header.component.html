@@ -4,6 +4,24 @@
     <!-- MOBILE MENU -->
 
     <div class="container navbar" appClickOutside (clickOutside)="closeMenu()">
+      <div class="music">
+        <button (click)="playMusic()" [disabled]="isMusicPlaying()">
+          <img
+            src="../../assets/audioON.svg"
+            alt="play"
+            width="22"
+            height="22"
+          />
+        </button>
+        <button (click)="pauseMusic()" [disabled]="!isMusicPlaying()">
+          <img
+            src="../../assets/audioOFF.svg"
+            alt="pause"
+            width="22"
+            height="22"
+          />
+        </button>
+      </div>
       <div
         class="burger-menu"
         (click)="onBurgerClicked()"
@@ -49,6 +67,24 @@
       <button (click)="switchLanguage('it')">
         <img src="assets/it.png" alt="Italian" width="32" height="32" />
       </button>
+      <div class="music">
+        <button (click)="playMusic()" [disabled]="isMusicPlaying()">
+          <img
+            src="../../assets/audioON.svg"
+            alt="play"
+            width="32"
+            height="32"
+          />
+        </button>
+        <button (click)="pauseMusic()" [disabled]="!isMusicPlaying()">
+          <img
+            src="../../assets/audioOFF.svg"
+            alt="pause"
+            width="32"
+            height="32"
+          />
+        </button>
+      </div>
     </div>
   </nav>
 </header>
