@@ -2,8 +2,8 @@
   "profile": {
     "title": "DANIELE QUINTILIANI",
     "greeting": "¡HOLA! ¡Soy Daniele!",
-    "description1": "Soy un Desarrollador Full Stack con {{age}} años de experiencia en la vida y una pasión que comenzó cuando era joven con mi Commodore64. Aunque mi camino profesional me llevó a estudiar Química y Biología, siempre mantuve vivo mi amor por la informática y los videojuegos.",
-    "description2": "En septiembre de 2023, decidí cambiar de carrera para seguir mi verdadera pasión por la programación. Para perfeccionar mis habilidades y aprender las mejores prácticas del sector, me inscribí en un bootcamp intensivo de Full Stack Web Developer. Durante este programa, no solo fortalecí mi dominio de lenguajes como JavaScript, sino que también aprendí a trabajar en proyectos reales, colaborando en equipo y utilizando metodologías ágiles.",
+    "description1": "Soy un Desarrollador Full Stack con {{age}} años y una pasión que comenzó cuando era joven con mi Commodore64. Aunque mi camino profesional me llevó a estudiar Química y Biología, siempre mantuve vivo mi amor por la informática y los videojuegos.",
+    "description2": "En septiembre de 2023, decidí cambiar de carrera para seguir mi verdadera pasión por la programación. Para perfeccionar mis habilidades y aprender las mejores prácticas del sector, me inscribí a un bootcamp intensivo de Full Stack Web Developer. Durante este programa, no solo fortalecí mi dominio de lenguajes como JavaScript, sino que también aprendí a trabajar en proyectos reales, colaborando en equipo y utilizando metodologías ágiles.",
     "description3": "Este cambio ha sido un desafío emocionante y una oportunidad para combinar mi formación científica con mi nuevo enfoque en el desarrollo de software. Estoy decidido a seguir creciendo en este campo y aportar mis habilidades y pasión a cada proyecto en el que participo.",
     "description4": "Espero que disfrutes explorando mi portafolio. No dudes en contactarme para cualquier proyecto o colaboración. Estoy listo para afrontar nuevos desafíos y seguir creciendo en este apasionante mundo de la programación."
   },
