@@ -73,6 +73,10 @@
       "name": "Pokedex",
       "description": "Utilizzando la PokeAPI, ho creato una Pokedex dove gli utenti possono cercare i loro Pokémon preferiti. Il progetto è stato sviluppato utilizzando Angular."
     },
+    "Voltix": {
+      "name": "Voltix",
+      "description": "Voltix è un progetto pilota per Miluz. La piattaforma serve per gestire i costi della bolletta della luce, utilizzando dati provenienti da un misuratore di elettricità installato dall'azienda e confrontandoli con le fatture caricate tramite PDF. Se vengono rilevate discrepanze, genera un avviso e crea un rapporto dettagliato."
+    },
     "githubFront": "GitHub Front",
     "githubBack": "GitHub Back",
     "viewProject": "Visualizza Progetto"

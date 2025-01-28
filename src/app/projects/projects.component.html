@@ -3,7 +3,13 @@
   <div class="projects" *ngFor="let project of projects">
     <h3>{{ "projects." + project.name + ".name" | translate }}</h3>
     <div class="projectBody">
-      <img [src]="project.image" [alt]="project.name" height="100" />
+      <img
+      class="projectImage"
+        [src]="project.image"
+        [alt]="project.name"
+        width="160"
+        height="100"
+      />
       <p>{{ "projects." + project.name + ".description" | translate }}</p>
     </div>
     <div class="tech">
