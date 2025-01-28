@@ -27,4 +27,14 @@ export const PROJECTS: Project[] = [
     path: 'https://pokedex17.netlify.app/',
     front: 'https://github.com/Malethik/Pokemon-Angular-17',
   },
+  {
+    name: 'Voltix',
+    technologies: ['Angular', 'JavaScript', 'TypeScript'],
+    description:
+      'Voltix is a pilot project for Miluz. The platform is designed to manage electricity bill costs using data from an electricity meter installed by the company and comparing it with invoices uploaded via PDF. If discrepancies are detected, it triggers an alert and generates a detailed report.',
+    image: '../../../assets/voltix.webp',
+    path: 'https://www.youtube.com/watch?v=A2ivZBY7a90',
+    front: 'https://github.com/IgrowkerTraining/i004-voltix-front',
+    back: 'https://github.com/IgrowkerTraining/i004-voltix-back',
+  },
 ];
