@@ -24,25 +24,43 @@
     "javaTitle": "JAVA EE",
     "javaInstitution": "Core Network sl",
     "javaLocationDate": "Madrid - 2024",
-    "javaDescription": "I completed an intensive course on Java EE (Enterprise Edition) at Core Network SL in Madrid. During the course, I gained advanced skills in developing enterprise applications using the Java EE framework. I studied and applied technologies such as Servlets, JSP (JavaServer Pages), EJB (Enterprise JavaBeans), and JPA (Java Persistence API), as well as software design and architecture techniques for scalable and maintainable applications. I worked on real-world projects that allowed me to integrate various components and services, enhancing my ability to manage and develop complex software solutions."
+    "javaDescription": "I completed an intensive course on Java EE (Enterprise Edition) at Core Network SL in Madrid. During the course, I gained advanced skills in developing enterprise applications using the Java EE framework. I studied and applied technologies such as Servlets, JSP (JavaServer Pages), EJB (Enterprise JavaBeans), and JPA (Java Persistence API), as well as software design and architecture techniques for scalable and maintainable applications. I worked on real-world projects that allowed me to integrate various components and services, enhancing my ability to manage and develop complex software solutions.",
+    "oracleCertification": {
+      "name": "Oracle Certified Java EE 7 Application Developer (1Z0-900)",
+      "issuer": "Oracle",
+      "date": "2024",
+      "description": "Achieved certification demonstrating proficiency in developing enterprise-level applications using Java EE 7. This includes expertise in JPA, EJB, Web Services, and the design and deployment of secure, scalable Java-based applications."
+    }
   },
   "knowledge": {
     "sectionTitle": "KNOWLEDGE:"
   },
   "workExperience": {
-    "sectionTitle": "WORKING EXPERIENCE",
+    "sectionTitle": "WORK EXPERIENCE",
     "curriculum": "My Curriculum: 💾",
-    "raam": {
-      "company": "RAAM Delivery SL, Madrid",
-      "position": "Administrative",
-      "dates": "2020 - 2023",
-      "description": "Use of computer systems and technologies (Excel, Word). Coordination of work schedules and tasks for a team of 42 people. Preparation of periodic reports on work progress."
+    "lamaCanyon": {
+      "company": "Freelance - CRM for lama Canyon",
+      "position": "Full Stack Web Developer",
+      "dates": "10/2024 - currently",
+      "description": "Developed the front-end using react, leveraging external libraries like Flowbite, ApexCharts, and JWT, among others. Built the back-end with Node (Express). Database hosted on MySQL via AWS RDS. The platform tracks incoming and outgoing money, provides gross and net profit estimates, and manages clients, orders, inventory items, and suppliers."
+    },
+    "voltix": {
+      "company": "Voltix - Igrowker",
+      "position": "Front End Angular Developer",
+      "dates": "11/2024 - 12/2024",
+      "description": "Developed the FrontEnd of a platform for Miluz sl. The platform was built using Angular 18 with Tailwind CSS, JWT, ApexCharts, Docker, Gitflow, and Python on the backend with a PostgreSQL database. I led the frontend team of six people, working remotely with a Scrum methodology."
+    },
+    "motoMarket": {
+      "company": "Freelance - Moto Market",
+      "position": "FullStack Web Developer",
+      "dates": "11/2023 - 09/2024",
+      "description": "Built an entire application using the NestJS framework for the back-end, implementing the database with PostgreSQL and Prisma as the ORM. Designed a user-friendly front-end with HTML, CSS, JavaScript, and TypeScript, utilizing the latest version of Angular. Implemented unit, integration, and E2E testing. Used modern development tools like Git (Gitflow) and GitHub for version control and collaboration."
     },
     "naf": {
-      "company": "NAF SERVIZI SRL, Rome",
-      "position": "IT / Administrative Consultant",
-      "dates": "2012 - 2018",
-      "description": "Responsible for creating functional and intuitive web pages and sites for clients using WordPress. Maintenance and updating of existing web applications to ensure security and performance. Use of computer systems and technologies (Excel, Word). Third-party management services."
+      "company": "NAF SERVIZI",
+      "position": "Full Stack Developer",
+      "dates": "04/2020 - 09/2023",
+      "description": "Responsible for creating functional and intuitive applications and websites for clients using WordPress, HTML, CSS, JavaScript, TypeScript, and Angular for the front end. On the back end, worked with NodeJS, Java, REST API, and GraphQL, among others. All developed applications included testing support. Maintained and updated existing web applications to ensure security and performance."
     }
   },
   "projects": {

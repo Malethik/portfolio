@@ -24,7 +24,13 @@
     "javaTitle": "JAVA EE",
     "javaInstitution": "Core Network sl",
     "javaLocationDate": "Madrid - 2024",
-    "javaDescription": "Ho completato un corso intensivo su Java EE (Enterprise Edition) presso Core Network SL a Madrid. Durante il corso, ho acquisito competenze avanzate nello sviluppo di applicazioni enterprise utilizzando il framework Java EE. Ho studiato e applicato tecnologie come Servlet, JSP (JavaServer Pages), EJB (Enterprise JavaBeans) e JPA (Java Persistence API), nonché tecniche di progettazione e architettura software per applicazioni scalabili e manutenibili. Ho lavorato su progetti reali che mi hanno permesso di integrare vari componenti e servizi, migliorando la mia capacità di gestire e sviluppare soluzioni software complesse."
+    "javaDescription": "Ho completato un corso intensivo su Java EE (Enterprise Edition) presso Core Network SL a Madrid. Durante il corso, ho acquisito competenze avanzate nello sviluppo di applicazioni enterprise utilizzando il framework Java EE. Ho studiato e applicato tecnologie come Servlet, JSP (JavaServer Pages), EJB (Enterprise JavaBeans) e JPA (Java Persistence API), nonché tecniche di progettazione e architettura software per applicazioni scalabili e manutenibili. Ho lavorato su progetti reali che mi hanno permesso di integrare vari componenti e servizi, migliorando la mia capacità di gestire e sviluppare soluzioni software complesse.",
+    "oracleCertification": {
+      "name": "Sviluppatore Certificato Oracle Java EE 7 (1Z0-900)",
+      "issuer": "Oracle",
+      "date": "2024",
+      "description": "Certificazione ottenuta dimostrando competenza nello sviluppo di applicazioni a livello enterprise utilizzando Java EE 7. Include esperienza in JPA, EJB, Web Services e nella progettazione e distribuzione di applicazioni Java sicure e scalabili."
+    }
   },
   "knowledge": {
     "sectionTitle": "CONOSCENZE:"
@@ -32,17 +38,29 @@
   "workExperience": {
     "sectionTitle": "ESPERIENZA LAVORATIVA",
     "curriculum": "Il mio Curriculum: 💾",
-    "raam": {
-      "company": "RAAM Delivery SL, Madrid",
-      "position": "Amministrativo",
-      "dates": "2020 - 2023",
-      "description": "Uso di sistemi informatici e tecnologici (Excel, Word). Coordinazione degli orari di lavoro e delle mansioni per un team di 42 persone. Elaborazione di rapporti periodici sull'andamento del lavoro."
+    "lamaCanyon": {
+      "company": "Freelance - CRM per lama Canyon",
+      "position": "Full Stack Web Developer",
+      "dates": "10/2024 - attualmente",
+      "description": "Sviluppato il front-end utilizzando React, sfruttando librerie esterne come Flowbite, ApexCharts e JWT, tra le altre. Realizzato il back-end con Node (Express). Database ospitato su MySQL tramite AWS RDS. La piattaforma traccia entrate e uscite di denaro, fornisce stime di profitti lordi e netti, e gestisce clienti, ordini, inventario e fornitori."
+    },
+    "voltix": {
+      "company": "Voltix - Igrowker",
+      "position": "Front End Angular Developer",
+      "dates": "11/2024 - 12/2024",
+      "description": "Sviluppato il FrontEnd di una piattaforma per Miluz sl. La piattaforma è stata realizzata utilizzando Angular 18 con Tailwind CSS, JWT, ApexCharts, Docker, Gitflow e Python nel backend con un database PostgreSQL. Ho guidato il team frontend composto da sei persone, lavorando in modalità remota con metodologia Scrum."
+    },
+    "motoMarket": {
+      "company": "Freelance - Moto Market",
+      "position": "FullStack Web Developer",
+      "dates": "11/2023 - 09/2024",
+      "description": "Realizzato un'intera applicazione utilizzando il framework NestJS per il back-end, implementando il database con PostgreSQL e Prisma come ORM. Progettato un front-end facile da usare con HTML, CSS, JavaScript e TypeScript, utilizzando l'ultima versione di Angular. Implementati test unitari, di integrazione ed E2E. Utilizzati strumenti di sviluppo moderni come Git (Gitflow) e GitHub per il controllo di versione e la collaborazione."
     },
     "naf": {
-      "company": "NAF SERVIZI SRL, Roma",
-      "position": "Informatico / Amministrativo consulente",
-      "dates": "2012 - 2018",
-      "description": "Responsabile della creazione di pagine e siti web funzionali e intuitivi per i clienti utilizzando WordPress. Manutenzione e aggiornamento delle applicazioni web esistenti per garantire sicurezza e prestazioni. Uso di sistemi informatici e tecnologici (Excel, Word). Servizi di gestione per conto terzi."
+      "company": "NAF SERVIZI",
+      "position": "Full Stack Developer",
+      "dates": "04/2020 - 09/2023",
+      "description": "Responsabile della creazione di applicazioni e siti web funzionali e intuitivi per i clienti utilizzando WordPress, HTML, CSS, JavaScript, TypeScript e Angular per il front end. Nel back end, ho lavorato con NodeJS, Java, REST API e GraphQL, tra gli altri. Tutte le applicazioni sviluppate includevano il supporto per i test. Manutenzione e aggiornamento delle applicazioni web esistenti per garantire sicurezza e prestazioni."
     }
   },
   "projects": {
