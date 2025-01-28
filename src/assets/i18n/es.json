@@ -24,7 +24,13 @@
     "javaTitle": "JAVA EE",
     "javaInstitution": "Core Network sl",
     "javaLocationDate": "Madrid - 2024",
-    "javaDescription": "Completé un curso intensivo sobre Java EE (Enterprise Edition) en Core Network SL en Madrid. Durante el curso, adquirí habilidades avanzadas en el desarrollo de aplicaciones empresariales utilizando el marco Java EE. Estudié y apliqué tecnologías como Servlets, JSP (JavaServer Pages), EJB (Enterprise JavaBeans) y JPA (Java Persistence API), así como técnicas de diseño y arquitectura de software para aplicaciones escalables y mantenibles. Trabajé en proyectos del mundo real que me permitieron integrar varios componentes y servicios, mejorando mi capacidad para gestionar y desarrollar soluciones de software complejas."
+    "javaDescription": "Completé un curso intensivo sobre Java EE (Enterprise Edition) en Core Network SL en Madrid. Durante el curso, adquirí habilidades avanzadas en el desarrollo de aplicaciones empresariales utilizando el marco Java EE. Estudié y apliqué tecnologías como Servlets, JSP (JavaServer Pages), EJB (Enterprise JavaBeans) y JPA (Java Persistence API), así como técnicas de diseño y arquitectura de software para aplicaciones escalables y mantenibles. Trabajé en proyectos del mundo real que me permitieron integrar varios componentes y servicios, mejorando mi capacidad para gestionar y desarrollar soluciones de software complejas.",
+    "oracleCertification": {
+      "name": "Desarrollador Certificado en Java EE 7 por Oracle (1Z0-900)",
+      "issuer": "Oracle",
+      "date": "2024",
+      "description": "Certificación obtenida demostrando competencia en el desarrollo de aplicaciones a nivel empresarial utilizando Java EE 7. Incluye experiencia en JPA, EJB, Servicios Web y en el diseño y despliegue de aplicaciones Java seguras y escalables."
+    }
   },
   "knowledge": {
     "sectionTitle": "CONOCIMIENTOS:"
@@ -32,17 +38,29 @@
   "workExperience": {
     "sectionTitle": "WORKING EXPERIENCE",
     "curriculum": "My Curriculum: 💾",
-    "raam": {
-      "company": "RAAM Delivery SL, Madrid",
-      "position": "Administrativo",
-      "dates": "2020 - 2023",
-      "description": "Uso de sistemas informáticos y tecnologicós (excel, word). Coordinación de los horarios de trabajo y tareas del equipo de 42 personas. Elaboración de informes y reportes periódicos sobre el andamento de trabajo."
+    "lamaCanyon": {
+      "company": "Freelance - CRM por lama Canyon",
+      "position": "Full Stack Web Developer",
+      "dates": "10/2024 - actualmente",
+      "description": "Desarrollo la parte front con React, usando librerías externas como Flowbite, ApexCharts y JWT, entre otras. Desarrollo la parte back con Node (Express). Base de datos en MySQL en AWS RDS. La plataforma tiene que trazar la entrada y la salida de dinero y dar una estimación de las ganancias brutas y netas, trazar los clientes, las órdenes, los objetos en inventario y los proveedores."
+    },
+    "voltix": {
+      "company": "Voltix - Igrowker",
+      "position": "Front End Angular Developer",
+      "dates": "11/2024 - 12/2024",
+      "description": "Desarrollo parte FrontEnd, de una plataforma por Miluz sl, plataforma desarollada con Angular 18 con tailwind css, jwt, apexcharts, docker, gitflow, python en el backend con base dato PostgreSQL. En esta ocasion he liderado el equipo frontend, formando de un total 6 persona. Utilizamo modalidad remota con metodologia de trabajo scrum."
+    },
+    "motoMarket": {
+      "company": "Freelance - Moto Market",
+      "position": "FullStack Web Developer",
+      "dates": "11/2023 - 09/2024",
+      "description": "Desarrollè una aplicacion en su totalidad usando por el back framework NestJS, implementando el database con PostgreSQL y Prisma como ORM. Implementación de un diseño front facil de usar con HTML, CSS, Javascript, Typescript y utilizando la ultima version de Angular. Testing de pruebas unitaria, de integración y E2E. Utilizando herramientas de desarrollo modernas como git (gitflow) y gitHub para colaborar en el codigo y crear un control de versiones."
     },
     "naf": {
-      "company": "NAF SERVIZI SRL, Roma",
-      "position": "Informatico / Administrativo consultora",
-      "dates": "2012 - 2018",
-      "description": "Encargado de la creación de páginas y sitios web funcionales e intuitivos para los clientes usando Wordpress. Mantenimiento y actualizacion de las aplicaciones web existentes para garantizar las seguridad y el rendimiento. Uso de sistemas informaticos (excel, word). Servicios de gestoría por terceros."
+      "company": "NAF SERVIZI",
+      "position": "Full Stack Developer",
+      "dates": "04/2020 - 09/2023",
+      "description": "Encargado de la creación de aplicación y sitios web funcionales e intuitivos para los clientes usando Wordpress, HTML, CSS, JavaScript, TypeScript y Angular en la parte front end. En la parte back end he trabajado con NodeJS, Java y con REST API y GraphQL entre otras. Todas las aplicaciones desarollada tienen un suporte por parte del testing. Mantenimiento y actualizacion de las aplication web existentes para garantizar las seguridad y el rendimiento."
     }
   },
   "projects": {
